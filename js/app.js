@@ -158,7 +158,7 @@
             , p = new d["G"]
             , v = p
             , m = new d["pb"](v)
-            , b = "/course/assets/textures/"
+            , b = "assets/textures/"
             , f = [{
             url: b + "shiny-black-metal.png",
             name: "shiny-black-metal"
@@ -271,7 +271,7 @@
                 value: function() {
                     this.initFlag || (this.initFlag = !0,
                         this.ctx = new AudioContext,
-                        this.audio = new Audio("/course/assets/on-my-side.mp3"),
+                        this.audio = new Audio("assets/on-my-side.mp3"),
                         this.audio.currentTime = 45,
                         this.audioSource = this.ctx.createMediaElementSource(this.audio),
                         this.analyser = this.ctx.createAnalyser(),
@@ -345,7 +345,7 @@
                                 }
                             )).texture
                         }),
-                        this.modelLoader.load("/course/assets/models/soundPillards.glB", (function(e) {
+                        this.modelLoader.load("assets/models/soundPillards.glB", (function(e) {
                                 e.scene.traverse((function(e) {
                                         e instanceof d["L"] && ("base" == e.name ? n.pillard = e : e.material = n.bMatCap)
                                     }
@@ -436,7 +436,7 @@
                     this.scene = e,
                         this.modelLoader = new h["a"](v),
                         this.base,
-                        this.modelLoader.load("/course/assets/models/base.glb", (function(e) {
+                        this.modelLoader.load("assets/models/base.glb", (function(e) {
                                 console.log(e.scene),
                                     e.scene.traverse((function(e) {
                                             e instanceof d["L"] && (n.base = e)
@@ -508,7 +508,7 @@
                             uniforms: t,
                             transparent: !0
                         }),
-                        this.modelLoader.load("/course/assets/models/outerShell.glb", (function(e) {
+                        this.modelLoader.load("assets/models/outerShell.glb", (function(e) {
                                 e.scene.traverse((function(e) {
                                         e instanceof d["L"] && (n.shell = e)
                                     }
